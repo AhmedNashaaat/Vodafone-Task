@@ -6,3 +6,4 @@ Solutions of two tasks automation from Vodafone company Using intellige IDE.
 - Maven
 - TestNG
 - DDT
+- Page Object Model
