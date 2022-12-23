@@ -1,5 +1,8 @@
 # Vodafone-Task
-Solutions of two task automation from Vodafone company Using Selenium webdriver by Java language and intellige IDE and I used DDT.
+Solutions of two tasks automation from Vodafone company Using intellige IDE.
 
-
-
+# Tech stack
+-Java
+-Maven
+-TestNG
+-DDT
