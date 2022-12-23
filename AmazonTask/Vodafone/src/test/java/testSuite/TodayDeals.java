@@ -2,6 +2,7 @@ package testSuite;
 
 import Pages.DealsPage;
 import Pages.HomePage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TodayDeals extends TestBase {
@@ -19,8 +20,9 @@ public class TodayDeals extends TestBase {
         dealsPageObject.navigateToPageThree();
         Thread.sleep(200);
         dealsPageObject.navigateToPageFour();
+        Thread.sleep(200);
         dealsPageObject.clickOnItem();
         dealsPageObject.clickOnAddToCartBtn();
-
+        Assert.assertTrue(dealsPageObject.AddedToCartTxt.isDisplayed());
     }
 }

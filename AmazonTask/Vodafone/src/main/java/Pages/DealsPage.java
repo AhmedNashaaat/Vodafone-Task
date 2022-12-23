@@ -19,10 +19,12 @@ public class DealsPage extends PageBase {
     WebElement page3Btn;
     @FindBy(xpath = "(//a[normalize-space()='4'])[1]")
     WebElement page4Btn;
-    @FindBy(xpath = "//div[contains(text(),'Sony Wireless RF Headphone 150-Foot Range, Noise R')]")
+    @FindBy(css = "img[alt='Wireless Bluetooth Earbuds'][src='https://m.media-amazon.com/images/I/31S7WzpjNzL._AC_UF226,226_FMjpg_.jpg']")
     WebElement itemBtn;
     @FindBy(id = "add-to-cart-button")
     WebElement addToCartBtn;
+    @FindBy(xpath = "//span[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold']")
+    public WebElement AddedToCartTxt;
 
 
     public void selectGroceryAndHeadphones() {
