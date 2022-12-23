@@ -11,7 +11,7 @@ public class DealsPage extends PageBase {
 
     @FindBy(xpath = "//span[normalize-space()='Headphones']")
     WebElement headPhones;
-    @FindBy(css = "body > div:nth-child(1) > div:nth-child(77) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > span:nth-child(3) > ul:nth-child(3) > li:nth-child(18) > label:nth-child(1) > span:nth-child(2)")
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[21]/div[1]/div[1]/div[1]/div[2]/div[2]/span[3]/ul[1]/li[18]/label[1]/span[1]")
     WebElement grocery;
     @FindBy(xpath = "//span[normalize-space()='10% off or more']")
     WebElement discountBtn;
@@ -28,6 +28,8 @@ public class DealsPage extends PageBase {
     public void selectGroceryAndHeadphones() {
         clickBtn(grocery);
         clickBtn(headPhones);
+
+
     }
 
     public void clickOnDiscount() {
